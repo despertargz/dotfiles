@@ -33,12 +33,19 @@ set splitbelow
 " create splits
 nnoremap ,vs :vs<cr>
 nnoremap ,sp :sp<cr>
+nnoremap ,vt :vs<cr> :terminal<cr>
 
 " move to window
 nnoremap <c-h> <c-w><c-h>
 nnoremap <c-l> <c-w><c-l>
 nnoremap <c-j> <c-w><c-j>
 nnoremap <c-k> <c-w><c-k>
+
+tnoremap <c-h> <c-\><c-n><c-w><c-h>
+tnoremap <c-l> <c-\><c-n><c-w><c-l>
+tnoremap <c-j> <c-\><c-n><c-w><c-j>
+tnoremap <c-k> <c-\><c-n><c-w><c-k>
+
 
 " resize
 nnoremap <silent> <c-left> :vertical resize -15<cr>
@@ -48,6 +55,7 @@ nnoremap <silent> <c-down> :resize -5<cr>
 nnoremap ,wf <c-w>\| <c-w>_
 nnoremap ,wr <c-w>=
 
+:set fillchars+=vert:\ 
 
 
 
